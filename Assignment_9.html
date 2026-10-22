@@ -1,0 +1,97 @@
+<!-- Complete a professional job application form -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Application Form</title>
+</head>
+<body>
+    <h1>Job Application Form</h1>
+    <p>Please complete the form below to apply for a position.</p>
+
+    <form action="#" method="post">
+        <fieldset>
+            <legend>Personal Details</legend>
+
+            <label for="fullname">Full Name:</label>
+            <input type="text" id="fullname" name="fullname" required>
+            <br><br>
+
+            <label for="jobemail">Email Address:</label>
+            <input type="email" id="jobemail" name="email" required>
+            <br><br>
+
+            <label for="jobphone">Phone Number:</label>
+            <input type="tel" id="jobphone" name="phone"
+                   pattern="[0-9]{10}" required>
+            <br><br>
+
+            <label for="city">City:</label>
+            <input type="text" id="city" name="city" required>
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+            <legend>Job Details</legend>
+
+            <label for="position">Position Applied For:</label>
+            <select id="position" name="position" required>
+                <option value="">Select a position</option>
+                <option value="Web Developer">Web Developer</option>
+                <option value="Software Developer">Software Developer</option>
+                <option value="Data Analyst">Data Analyst</option>
+                <option value="AI Intern">AI Intern</option>
+            </select>
+            <br><br>
+
+            <label for="experience">Experience:</label>
+            <select id="experience" name="experience" required>
+                <option value="">Select experience</option>
+                <option value="Fresher">Fresher</option>
+                <option value="1-2 years">1-2 Years</option>
+                <option value="3-5 years">3-5 Years</option>
+                <option value="5+ years">5+ Years</option>
+            </select>
+            <br><br>
+
+            <label for="education">Highest Qualification:</label>
+            <input type="text" id="education"
+                   name="education" required>
+            <br><br>
+
+            <label for="skills">Technical Skills:</label>
+            <textarea id="skills" name="skills"
+                      rows="3" cols="35"
+                      placeholder="Enter your skills"
+                      required></textarea>
+            <br><br>
+
+            <label for="resume">Upload Resume:</label>
+            <input type="file" id="resume" name="resume"
+                   accept=".pdf,.doc,.docx" required>
+            <br><br>
+
+            <label for="coverletter">Cover Letter:</label>
+            <textarea id="coverletter" name="coverletter"
+                      rows="5" cols="35"
+                      placeholder="Write a short cover letter"></textarea>
+        </fieldset>
+
+        <br>
+
+        <input type="checkbox" id="declaration"
+               name="declaration" required>
+        <label for="declaration">
+            I confirm that the information provided is correct.
+        </label>
+
+        <br><br>
+
+        <button type="submit">Submit Application</button>
+        <button type="reset">Clear Form</button>
+    </form>
+</body>
+</html>
